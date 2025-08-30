@@ -7,34 +7,53 @@ All colors MUST be HSL.
 */
 
 @layer base {
-  :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+:root {
+    --background: 35 25% 97%;
+    --foreground: 25 15% 15%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 35 30% 98%;
+    --card-foreground: 25 15% 15%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 35 30% 98%;
+    --popover-foreground: 25 15% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 24 85% 55%;
+    --primary-foreground: 35 25% 97%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 15 45% 25%;
+    --secondary-foreground: 35 25% 97%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 35 20% 92%;
+    --muted-foreground: 25 10% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 45 85% 65%;
+    --accent-foreground: 25 15% 15%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 35 25% 97%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 35 25% 88%;
+    --input: 35 25% 90%;
+    --ring: 24 85% 55%;
+
+    /* Heritage design tokens */
+    --heritage-saffron: 24 85% 55%;
+    --heritage-burgundy: 15 45% 25%;
+    --heritage-gold: 45 85% 65%;
+    --heritage-cream: 35 25% 97%;
+    --heritage-warm: 35 30% 98%;
+    
+    /* Gradients */
+    --gradient-heritage: linear-gradient(135deg, hsl(var(--heritage-saffron)), hsl(var(--heritage-gold)));
+    --gradient-cultural: linear-gradient(180deg, hsl(var(--heritage-cream)), hsl(var(--heritage-warm)));
+    --gradient-storyteller: linear-gradient(45deg, hsl(var(--heritage-burgundy)), hsl(var(--heritage-saffron)));
+    
+    /* Shadows */
+    --shadow-cultural: 0 20px 40px -10px hsl(var(--heritage-saffron) / 0.2);
+    --shadow-heritage: 0 10px 30px -5px hsl(var(--heritage-burgundy) / 0.15);
+    
+    /* Transitions */
+    --transition-cultural: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 
     --radius: 0.5rem;
 
